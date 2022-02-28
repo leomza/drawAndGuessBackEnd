@@ -18,7 +18,7 @@ app.use(express["static"](pathToPublicFolder));
 app.use(express.json());
 app.use(cors({
   credentials: true,
-  origin: 'https://guessdraw.netlify.app/'
+  origin: 'https://guessdraw.netlify.app'
 }));
 app.use(morgan('tiny'));
 
