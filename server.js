@@ -20,11 +20,6 @@ app.use(morgan('tiny'))
 const sessionRoute = require('./routes/sessionRoute')
 const userRoute = require('./routes/userRoute')
 
-function test (req, res) {
-  return res.send('The app is working')
-}
-
-app.use('/', test)
 app.use('/session', sessionRoute)
 app.use('/user', userRoute)
 
