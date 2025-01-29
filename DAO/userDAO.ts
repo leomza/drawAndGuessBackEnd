@@ -20,7 +20,7 @@ class UsersDAO {
             return ({ error: error.message })
         }
     }
-
+ 
     static async getUserById(id) {
         try {
             const queryResult = await userSchema.findOne({ _id: id })
